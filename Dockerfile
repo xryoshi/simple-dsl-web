@@ -12,4 +12,6 @@ RUN bundle install
 
 COPY . .
 
-CMD ["./main.rb"]
+EXPOSE 9292
+RUN chmod +x main.rb
+CMD ["bundle", "exec", "puma"]

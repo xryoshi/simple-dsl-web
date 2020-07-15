@@ -1,4 +1,4 @@
-# main.rb
+#!/usr/bin/env ruby
 
 require 'sinatra'
 
