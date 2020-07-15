@@ -11,12 +11,12 @@
 $ gem install bundler
 $ bundle install
 $ bundle exec puma
-
-access with browser: http://localhost:9292
 ```
+access with browser: http://localhost:9292
 
 ## How to run with Docker?
 ```
 $ docker build -t simple-dsl-web .
 $ docker run -p 8080:9292 -it --name simple-dsl-web simple-dsl-web
 ```
+access with browser: http://localhost:8080
