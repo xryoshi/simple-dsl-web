@@ -1,9 +1,22 @@
 # Simple DSL Web
 
-### How to run?
+## Requirements
 ```
-1. Install ruby programming language
-2. gem install sinatra
-3. ruby main.rb
-4. access with browser: http://localhost:4567
+1. Ruby language (https://www.ruby-lang.org)
+2. Docker (https://www.docker.com/)
+```
+
+## How to run?
+```
+$ gem install bundler
+$ bundle install
+$ bundle exec puma
+
+access with browser: http://localhost:9292
+```
+
+## How to run with Docker?
+```
+$ docker build -t simple-dsl-web .
+$ docker run -p 8080:9292 -it --name simple-dsl-web simple-dsl-web
 ```
