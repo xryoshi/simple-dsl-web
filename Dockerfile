@@ -1,5 +1,7 @@
 FROM ruby:2.5
 
+MAINTAINER Nizar Lazuardy Firmansyah
+
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
 
