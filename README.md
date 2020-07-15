@@ -28,3 +28,4 @@ $ helm lint
 $ helm package .
 $ helm install simple-dsl-web-0.1.0.tgz
 ```
+access with browser: http://simple-dsl-web.svc.local
