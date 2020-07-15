@@ -20,3 +20,11 @@ $ docker build -t simple-dsl-web .
 $ docker run -p 8080:9292 -it --name simple-dsl-web simple-dsl-web
 ```
 access with browser: http://localhost:8080
+
+## How to run with Helm?
+```
+$ cd charts/simple-dsl-web
+$ helm lint
+$ helm package .
+$ helm install simple-dsl-web-0.1.0.tgz
+```
