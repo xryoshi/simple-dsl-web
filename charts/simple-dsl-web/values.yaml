@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: nzjourney/simple-dsl-web
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "1.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -21,7 +21,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: "simple-dsl-web"
 
 podAnnotations: {}
 
@@ -38,16 +38,16 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 9292
 
 ingress:
-  enabled: false
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
+  enabled: true
+  annotations: 
+    kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
-      paths: []
+    - host: simple-dsl-web.svc.local
+      paths: [/]
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
