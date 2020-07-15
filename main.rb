@@ -3,5 +3,7 @@
 require 'sinatra'
 
 get '/' do
-    puts 'Hello world!'
+    status 200
+    content_type :json
+    { message: 'Hello world!'}.to_json
 end
