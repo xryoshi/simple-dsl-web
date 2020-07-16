@@ -3,7 +3,10 @@
 ## Requirements
 ```
 1. Ruby language (https://www.ruby-lang.org)
-2. Docker (https://www.docker.com/)
+
+optional:
+2. Docker (https://www.docker.com)
+3. Minikube (https://minikube.sigs.k8s.io)
 ```
 
 ## How to run?
