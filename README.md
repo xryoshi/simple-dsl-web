@@ -7,6 +7,7 @@
 optional:
 2. Docker (https://www.docker.com)
 3. Minikube (https://minikube.sigs.k8s.io)
+4. Helm (https://helm.sh/)
 ```
 
 ## How to run?
