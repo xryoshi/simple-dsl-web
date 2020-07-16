@@ -1,3 +1,5 @@
+[![<ORG_NAME>](https://circleci.com/gh/nzjourney/simple-dsl-web.svg?style=svg)](https://app.circleci.com/pipelines/github/nzjourney/simple-dsl-web)
+
 # Simple DSL Web
 
 ## Requirements
