@@ -14,4 +14,4 @@ COPY . .
 
 EXPOSE 9292
 RUN chmod +x main.rb
-CMD ["bundle", "exec", "puma"]
+CMD ["bundle", "exec", "puma", "-p", "9292"]
