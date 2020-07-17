@@ -7,7 +7,7 @@ get '/' do
         content_type :json
         { 
             message: 'Hello world!',
-            version: '1.0'
+            version: '0.1.0'
         }.to_json
     else
         p 'API missmatch'
