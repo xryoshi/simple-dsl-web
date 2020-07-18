@@ -8,7 +8,7 @@ get '/' do
         { 
             message: 'Hello world!',
             description: 'a simple dsl web',
-            version: '1.0.0'
+            version: '1.1.0'
         }.to_json
     else
         p 'API missmatch'
