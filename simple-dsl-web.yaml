@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-dsl-web
+  name: simple-dsl-web
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: simple-dsl-web
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: simple-dsl-web
+    spec:
+      containers:
+      - image: nzjourney/simple-dsl-web:1.1.0
+        name: simple-dsl-web
+        ports:
+        - containerPort: 9292
+          name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-dsl-web
+  namespace: default
+  labels:
+    service: simple-dsl-web
+spec:
+  ports:
+  - port: 9292
+    protocol: TCP
+  selector:
+    app: simple-dsl-web
+
